@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:table_ui/table_ui_screen.dart';
+import 'package:responsive_table_with_sticky_headers/table_ui_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child:  const TableUiScreen(),
+      child:  TableUiScreen(columns: [],rows: [],),
     );
    }
 }
